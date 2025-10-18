@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07-Các thẻ HTML thông dụng</title>
+  </head>
+  <body>
+    <!-- Thẻ heading từ h1-h6 -->
+    <h1>Đây là thẻ h1</h1>
+    <h2>Đây là thẻ h2</h2>
+    <h3>Đây là thẻ h3</h3>
+    <h4>Đây là thẻ h4</h4>
+    <h5>Đây là thẻ h5</h5>
+    <h6>Đây là thẻ h6</h6>
+
+    <!-- Thẻ paragraph (thẻ đoạn văn) p -->
+    <p>Đây là một đoạn văn</p>
+
+    <!-- Thẻ img -->
+    <!-- scr là source của ảnh có thẻ gắn link ngoài hoặc gắn link local -->
+    <!-- alt dùng để hiển thị thông tin name của ảnh khi ảnh gặp vấn đề không thể hiển thị được -->
+    <img
+      src="https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/31ebb47a-24ae-4959-acfb-4dc076b27e3a/anim=false,width=475.4032258064516/E3_00026_.jpeg"
+      alt="ảnh AI"
+    />
+
+    <!-- Thẻ móc neo (anchor) a dùng để link một một nguồn nào đấy bên ngoài hoặc local src code bằng id hoặc link src -->
+    <!-- Thêm thuộc tính target vào để giá trị bên trong là blank để trình duyệt mở cái URL sang tab mới và thêm thuộc tính rel có giá trị là noreferrer noopener để chặn lỗ hỏng bảo mật -->
+    <a
+      href="https://e-web.vn/relnoopener-noreferrer-la-gi/"
+      title="Link phim sét"
+      target="_blank"
+      rel="noreferrer noopener"
+      >Đây là link phim 18+</a
+    >
+
+    <!-- Thẻ ul và li -->
+    <ul>
+      <li>Mai nghỉ học</li>
+      <li>Mốt nghỉ học</li>
+      <li>Tuần sau nghỉ học</li>
+      <li>Tháng sau nghỉ học</li>
+      <li>Năm sau nghỉ học</li>
+    </ul>
+
+    <!-- Thẻ bảng table -->
+    <table>
+      <!-- thead là table head dùng để viết tiêu đề cho table (có thể viết bên trong th cũng được)-->
+      <thead>
+        <!-- Thằng th nó cũng như thead nhưng khi viết nội dung vào thì nó sẽ được in đậm lên và hiển thị nội dung theo chiều ngang-->
+        <th>STT</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>School</th>
+      </thead>
+      <!-- tbody table body dùng để viết các nội dung bên trong theo từng cột th-->
+      <tbody>
+        <!-- tr là table row dùng để tạo hàng -->
+        <tr>
+          <!-- td là table data dùng để viết nội dung bên trong và sẽ hiển thị nội dung theo chiều ngang mỗi tr-->
+          <td>1</td>
+          <td>Khang</td>
+          <td>23</td>
+          <td>FPT</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Long</td>
+          <td>26</td>
+          <td>FPT</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Huy</td>
+          <td>16</td>
+          <td>FPT</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Thẻ input -->
+    <input type="number" placeholder="Nhập Sđt Facebook của bạn..." />
+    <input type="password" placeholder="Nhập mật khẩu Facebook của bạn..." />
+
+    <!-- Thẻ button -->
+    <button>Hack</button>
+  </body>
+</html>
